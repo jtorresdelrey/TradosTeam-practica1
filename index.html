@@ -28,7 +28,7 @@
                 <h1 class="text-3xl font-black tracking-tight text-slate-800 uppercase">Arquitectura conceptual TAO</h1>
             </div>
             <p class="text-lg text-slate-500 max-w-2xl leading-relaxed">
-                Análisis de los pilares técnicos y de gestión en proyectos de traducción profesional con Trados Live.
+                Análisis de los pilares técnicos y de gestión en proyectos de traducción profesional con Trados Team.
             </p>
         </header>
 
@@ -47,10 +47,10 @@
         </main>
 
         <footer class="max-w-5xl mx-auto mt-12 text-center">
-            <div class="inline-flex flex-wrap justify-center items-center gap-6 px-8 py-4 bg-slate-800 rounded-full text-white shadow-xl">
+            <div class="mb-6 inline-flex flex-wrap justify-center items-center gap-6 px-8 py-4 bg-slate-800 rounded-full text-white shadow-xl">
                 <div class="flex items-center gap-2">
                     <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
-                    <span class="text-xs font-bold uppercase tracking-wider">Arquitectura de datos</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Gestión de datos</span>
                 </div>
                 <div class="flex items-center gap-2 border-l border-slate-700 pl-6">
                     <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
@@ -58,8 +58,11 @@
                 </div>
                 <div class="flex items-center gap-2 border-l border-slate-700 pl-6">
                     <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
-                    <span class="text-xs font-bold uppercase tracking-wider">QA profesional</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Consolidación de recursos</span>
                 </div>
+            </div>
+            <div class="text-slate-400 text-sm font-medium">
+                Jesús Torres del Rey, con soporte de Gemini | Trados Team
             </div>
         </footer>
     </div>
@@ -74,18 +77,18 @@
                 items: [
                     {
                         label: "Memorias de traducción (TM)",
-                        desc: "Diferenciación estratégica entre TM de lectura (referencia) y TM de escritura (memoria del proyecto).",
-                        technical: "Uso de plantillas de campos (Fuente/Cliente) y gestión de marcas de actualización para proteger la integridad del corpus."
+                        desc: "Diferenciación estratégica entre memorias de lectura (consulta) y de escritura (la memoria propia del proyecto).",
+                        technical: "La actualización final de la memoria garantiza que las correcciones del revisor se consoliden de forma permanente como un recurso lingüístico de valor."
                     },
                     {
                         label: "Bases terminológicas",
-                        desc: "Integración de glosarios preexistentes para asegurar la consistencia de la marca.",
-                        technical: "Verificación de cumplimiento terminológico en tiempo real (QA) y adición de nuevos términos durante la revisión."
+                        desc: "Integración de glosarios para asegurar que se respete la terminología específica y el estilo de la marca.",
+                        technical: "Control exhaustivo de términos prohibidos y permitidos durante la fase de verificación de calidad final."
                     },
                     {
                         label: "Traducción automática (TA)",
-                        desc: "Uso de motores de TA como soporte inicial, integrados en el motor del proyecto.",
-                        technical: "Configuración por pares de idiomas específicos y variantes lingüísticas."
+                        desc: "Uso de motores de TA como herramienta de productividad dentro del flujo de post-edición.",
+                        technical: "Ajuste de los umbrales de calidad y validación humana obligatoria para poder confirmar los segmentos."
                     }
                 ]
             },
@@ -97,70 +100,70 @@
                 items: [
                     {
                         label: "Ingeniería bilingüe",
-                        desc: "Fase de preparación avanzada que permite intervenir en el archivo preparado para traducir o revisar.",
-                        technical: "Permite bloquear segmentos, cambiar estados o traducir. Habilita el retroceso a fases de pretraducción (TM y PerfectMatch)."
+                        desc: "Preparación técnica de los archivos para poder intervenir en el contenido antes de traducir o revisar.",
+                        technical: "Permite bloquear segmentos, modificar estados y volver a fases previas de pretraducción o PerfectMatch si fuera necesario."
                     },
                     {
-                        label: "Tareas por lotes",
-                        desc: "Automatización de procesos masivos y generación de recursos externos.",
-                        technical: "Uso de 'Generar recursos de paquete sin conexión' para compartir paquetes con recursos lingüísticos integrados para Trados Studio."
+                        label: "Exportación de archivos finales",
+                        desc: "Conversión de los archivos bilingües de trabajo al formato original de entrega (archivos de destino).",
+                        technical: "Proceso de reconstrucción del documento final en el que se verifica que la estructura y el formato sean correctos tras la traducción."
                     },
                     {
-                        label: "Planificación de etapas",
-                        desc: "Control manual del avance del proyecto y asignación de responsabilidades.",
-                        technical: "Asignación dinámica de revisores y traductores según la disponibilidad y el rol (Gestor vs. Lingüista)."
+                        label: "Tareas de lote finales",
+                        desc: "Automatización de los procesos de cierre, generación de informes y limpieza de los archivos del proyecto.",
+                        technical: "Engloba la actualización masiva de las memorias y la sincronización de los recursos lingüísticos, tanto locales como en la nube."
                     }
                 ]
             },
             calidad: {
                 title: "Control de calidad (QA) y verificación",
-                subtitle: "Validación técnica y lingüística",
+                subtitle: "Validación técnica y lingüística final",
                 icon: "shield-check",
                 color: "emerald",
                 items: [
                     {
-                        label: "QA Checker automatizado",
-                        desc: "Configuración de reglas automáticas para detectar errores humanos.",
-                        technical: "Verificación de etiquetas, números, puntuación y consistencia. Configuración de iteraciones hacia atrás en caso de error."
+                        label: "Procesamiento de revisiones",
+                        desc: "Fase de arbitraje en la que se aceptan o rechazan los cambios propuestos por el revisor.",
+                        technical: "El responsable debe consolidar las ediciones para que el segmento alcance el estado de validación definitiva."
                     },
                     {
-                        label: "Control de cambios",
-                        desc: "Auditoría de las modificaciones realizadas durante la revisión.",
-                        technical: "Activación automática en la fase de implementación de revisión para visualización clara del feedback."
+                        label: "Gestión de estados de segmento",
+                        desc: "Uso de metadatos para controlar el avance y asegurar que no quede ningún contenido por procesar.",
+                        technical: "Cambios de estado controlados (Traducido, Rechazado, Aprobado) que permiten dar por finalizadas las distintas etapas."
                     },
                     {
-                        label: "Estados de segmento",
-                        desc: "Uso de metadatos de estado para el seguimiento del progreso.",
-                        technical: "Transición de 'Traducido' a 'Revisado' y finalmente 'Cerrado' (sello) para habilitar la actualización de la TM."
+                        label: "QA Checker profesional",
+                        desc: "Verificación automática de errores en números, etiquetas, puntuación y coherencia terminológica.",
+                        technical: "Configuración de reglas estrictas que impiden generar el archivo final si se detectan errores críticos en la estructura."
                     }
                 ]
             },
             colaboracion: {
                 title: "Gestión colaborativa",
-                subtitle: "Trabajo en paralelo y flujos cruzados",
+                subtitle: "Interacción entre perfiles y recursos compartidos",
                 icon: "users",
                 color: "purple",
                 items: [
                     {
-                        label: "Bandeja de entrada compartida",
+                        label: "Bandeja de entrada",
                         desc: "Punto central de gestión de tareas para equipos distribuidos.",
-                        technical: "Aceptación de tareas asignadas por terceros y visualización de notificaciones de flujo."
+                        technical: "Aceptación de tareas asignadas por terceros y visualización de notificaciones de flujo para coordinar el avance del proyecto."
                     },
                     {
                         label: "Bloqueo de segmentos",
                         desc: "Estrategia para el trabajo en paralelo sobre un mismo documento.",
-                        technical: "Protección de segmentos ajenos mediante bloqueos para evitar sobreescritura en equipos de 2 o 3 personas."
+                        technical: "Protección de segmentos ajenos mediante bloqueos para evitar sobreescrituras en equipos de varias personas."
                     },
                     {
                         label: "Implementación de revisión",
-                        desc: "Fase de diálogo técnico entre revisor y traductor.",
-                        technical: "El traductor procesa los cambios del revisor antes del cierre final, asegurando que la TM aprenda del contenido validado."
+                        desc: "Fase de diálogo técnico entre el revisor y el traductor.",
+                        technical: "El traductor procesa los cambios del revisor antes del cierre final, asegurando que la memoria aprenda del contenido validado."
                     }
                 ]
             },
             errores: {
                 title: "Gestión de errores",
-                subtitle: "Resolución de incidencias en el flujo",
+                subtitle: "Resolución de incidencias técnicas en el flujo",
                 icon: "alert-octagon",
                 color: "red",
                 items: [
@@ -248,16 +251,15 @@
                     <div class="mt-10 pt-8 border-t border-slate-50 flex items-center justify-between text-slate-400">
                         <div class="flex items-center gap-2">
                             <i data-lucide="zap" class="w-4 h-4"></i>
-                            <span class="text-xs font-bold uppercase">Enfoque Mastertrad profesional</span>
+                            <span class="text-xs font-bold uppercase">Arquitectura Profesional Trados Team</span>
                         </div>
-                        <div class="text-xs font-mono">CORE_CONCEPT_${currentActive.toUpperCase()}</div>
+                        <div class="text-xs font-mono">FLOW_SYSTEM_${currentActive.toUpperCase()}</div>
                     </div>
                 </div>
             `;
             lucide.createIcons();
         }
 
-        // Init
         window.onload = () => {
             renderNav();
             renderContent();
